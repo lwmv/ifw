@@ -13,5 +13,12 @@
       <cat name="android.intent.category.DEFAULT" />
       <scheme name="tbopen" />
     </intent-filter>
+    
+    <!-- m.jd.com launch jd app -->
+    <intent-filter>
+      <action name="android.intent.action.VIEW" />
+      <cat name="android.intent.category.DEFAULT" />
+      <scheme name="openapp.jdmobile" />
+    </intent-filter>
   </activity>
 </rules>
