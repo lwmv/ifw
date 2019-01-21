@@ -1,0 +1,17 @@
+<rules>
+  <activity block="true" log="false">
+    <!-- third party website ad launch taobao app -->
+    <intent-filter>
+      <action name="android.intent.action.VIEW" />
+      <cat name="android.intent.category.DEFAULT" />
+      <scheme name="taobao" />
+    </intent-filter>
+    
+    <!-- m.taobao.com launch taobao app -->
+    <intent-filter>
+      <action name="android.intent.action.VIEW" />
+      <cat name="android.intent.category.DEFAULT" />
+      <scheme name="tbopen" />
+    </intent-filter>
+  </activity>
+</rules>
