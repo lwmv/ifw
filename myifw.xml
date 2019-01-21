@@ -1,5 +1,5 @@
 <rules>
-  <activity block="true" log="false">
+  <activity block="true" log="true">
     <!-- third party website ad launch taobao app -->
     <intent-filter>
       <action name="android.intent.action.VIEW" />
