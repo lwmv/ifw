@@ -21,7 +21,7 @@
     <!-- prevent www.tmall.com from invoking app com.tmall.wireless -->
     <intent-filter>
       <action name="android.intent.action.VIEW" />
-      <scheme name="openapp.jdmobile" />
+      <scheme name="tmall" />
     </intent-filter>
   </activity>
 </rules>
