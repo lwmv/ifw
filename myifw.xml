@@ -1,23 +1,20 @@
 <rules>
   <activity block="true" log="true">
-    <!-- third party website ad launch taobao app -->
+    <!-- prevent third party website ad from invoking taobao app -->
     <intent-filter>
       <action name="android.intent.action.VIEW" />
-      <cat name="android.intent.category.DEFAULT" />
       <scheme name="taobao" />
     </intent-filter>
     
-    <!-- m.taobao.com launch taobao app -->
+    <!-- prevent m.taobao.com from invoking taobao app -->
     <intent-filter>
       <action name="android.intent.action.VIEW" />
-      <cat name="android.intent.category.DEFAULT" />
       <scheme name="tbopen" />
     </intent-filter>
     
-    <!-- m.jd.com launch jd app -->
+    <!-- prevent m.jd.com from invoking jd app -->
     <intent-filter>
       <action name="android.intent.action.VIEW" />
-      <cat name="android.intent.category.DEFAULT" />
       <scheme name="openapp.jdmobile" />
     </intent-filter>
   </activity>
