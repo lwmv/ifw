@@ -1,18 +1,24 @@
 <rules>
   <activity block="true" log="true">
-    <!-- prevent third party website ad from invoking taobao app -->
+    <!-- prevent third party website ad from invoking app com.taobao.taobao -->
     <intent-filter>
       <action name="android.intent.action.VIEW" />
       <scheme name="taobao" />
     </intent-filter>
     
-    <!-- prevent m.taobao.com from invoking taobao app -->
+    <!-- prevent m.taobao.com from invoking app com.taobao.taobao -->
     <intent-filter>
       <action name="android.intent.action.VIEW" />
       <scheme name="tbopen" />
     </intent-filter>
     
-    <!-- prevent m.jd.com from invoking jd app -->
+    <!-- prevent m.jd.com from invoking app com.jingdong.app.mall -->
+    <intent-filter>
+      <action name="android.intent.action.VIEW" />
+      <scheme name="openapp.jdmobile" />
+    </intent-filter>
+    
+    <!-- prevent www.tmall.com from invoking app com.tmall.wireless -->
     <intent-filter>
       <action name="android.intent.action.VIEW" />
       <scheme name="openapp.jdmobile" />
