@@ -30,5 +30,10 @@
       <cat name="android.intent.category.BROWSABLE" />
       <scheme name="douban" />
     </intent-filter>
+
+    <!-- only prevent intent from other non-system app. intent from the same app will get clearance  -->
+    <not>
+      <sender type="userId" />
+    </not>
   </activity>
 </rules>
