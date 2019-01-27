@@ -30,7 +30,14 @@
       <cat name="android.intent.category.BROWSABLE" />
       <scheme name="douban" />
     </intent-filter>
-
+    
+    <!-- prevent wap.ha.10086.cn from invoking com.xinhang.mobileclient -->
+    <intent-filter>
+      <action name="android.intent.action.VIEW" />
+      <cat name="android.intent.category.BROWSABLE" />
+      <scheme name="hnmcc" />
+    </intent-filter>
+      
     <!-- only prevent intent from other non-system app. intent from the same app will get clearance  -->
     <not>
       <sender type="userId" />
