@@ -43,6 +43,12 @@
       <scheme name="hnmcc" />
     </intent-filter>
     
+    <!-- prevent com.zhihu from being invoked by other apps -->
+    <intent-filter>
+      <action name="android.intent.action.VIEW" />
+      <scheme name="zhihu" />
+    </intent-filter>
+    
     <!-- only prevent intent from other non-system app. intent from the same app will get clearance  -->
     <not>
       <sender type="userId" />
