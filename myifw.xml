@@ -34,7 +34,6 @@
     <!-- prevent wap.ha.10086.cn from invoking com.xinhang.mobileclient -->
     <intent-filter>
       <action name="android.intent.action.VIEW" />
-
       <scheme name="hnmcc" />
     </intent-filter>
 
@@ -47,7 +46,6 @@
     <!-- prevent com.zhihu from being invoked by other apps -->
     <intent-filter>
       <action name="android.intent.action.VIEW" />
-
       <scheme name="zhihu" />
     </intent-filter>
 
@@ -63,6 +61,12 @@
       <scheme name="fleamarket" />
     </intent-filter>
 
+    <!-- prevent com.tencent.qqmusic from being invoked by other apps -->
+    <intent-filter>
+      <action name="android.intent.action.VIEW" />
+      <scheme name="qqmusic" />
+    </intent-filter>
+    
     <!-- only prevent intent from other non-system app. intent from the same app will get clearance  -->
     <not>
       <sender type="userId" />
