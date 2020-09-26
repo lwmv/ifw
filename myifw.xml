@@ -3,24 +3,28 @@
     <!-- prevent third party website ad from invoking app com.taobao.taobao -->
     <intent-filter>
       <action name="android.intent.action.VIEW" />
+      <cat name="android.intent.category.DEFAULT" />
       <scheme name="taobao" />
     </intent-filter>
     
     <!-- prevent m.taobao.com from invoking app com.taobao.taobao -->
     <intent-filter>
       <action name="android.intent.action.VIEW" />
+      <cat name="android.intent.category.BROWSABLE" />
       <scheme name="tbopen" />
     </intent-filter>
     
     <!-- prevent m.jd.com from invoking app com.jingdong.app.mall -->
     <intent-filter>
       <action name="android.intent.action.VIEW" />
+      <cat name="android.intent.category.BROWSABLE" />
       <scheme name="openapp.jdmobile" />
     </intent-filter>
     
     <!-- prevent www.tmall.com from invoking app com.tmall.wireless -->
     <intent-filter>
       <action name="android.intent.action.VIEW" />
+      <cat name="android.intent.category.BROWSABLE" />
       <scheme name="tmall" />
     </intent-filter>
     
@@ -34,6 +38,7 @@
     <!-- prevent wap.ha.10086.cn from invoking com.xinhang.mobileclient -->
     <intent-filter>
       <action name="android.intent.action.VIEW" />
+      <cat name="android.intent.category.DEFAULT" />
       <scheme name="hnmcc" />
     </intent-filter>
 
@@ -46,24 +51,28 @@
     <!-- prevent com.zhihu from being invoked by other apps -->
     <intent-filter>
       <action name="android.intent.action.VIEW" />
+      <cat name="android.intent.category.DEFAULT" />
       <scheme name="zhihu" />
     </intent-filter>
 
     <!-- prevent com.tencent.qqlive from being invoked by other apps -->
     <intent-filter>
       <action name="android.intent.action.VIEW" />
+      <cat name="android.intent.category.BROWSABLE" />
       <scheme name="tenvideo2" />
     </intent-filter>
 
     <!-- prevent com.taobao.idlefish from being invoked by other apps -->
     <intent-filter>
       <action name="android.intent.action.VIEW" />
+      <cat name="android.intent.category.BROWSABLE" />
       <scheme name="fleamarket" />
     </intent-filter>
 
     <!-- prevent com.tencent.qqmusic from being invoked by other apps -->
     <intent-filter>
       <action name="android.intent.action.VIEW" />
+      <cat name="android.intent.category.BROWSABLE" />
       <scheme name="qqmusic" />
     </intent-filter>
     
