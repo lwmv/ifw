@@ -76,7 +76,7 @@
       <scheme name="qqmusic" />
     </intent-filter>
     
-    <!-- only prevent intent from other non-system app. intent from the same app will get clearance  -->
+    <!-- only prevent intent from other non-system app. intent from the same app will not be blocked  -->
     <not>
       <sender type="userId" />
     </not>
